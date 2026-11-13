@@ -292,15 +292,15 @@ def reaction_rate_calculator(state: State) -> Page:
 
         "\n Starting Concentration (mol/L):",
 
-        TextBox("starting", 0.8, "number"),
+         TextBox("Starting Concentration (mol/L)", "starting_concentration"),
 
         "\n Ending Concentration (mol/L):",
 
-        TextBox("ending", 0.3, "number"),
+         TextBox("Ending Concentration (mol/L)", "ending_concentration"),
 
         "\n Time Elapsed (seconds):",
 
-        TextBox("reaction_time", 10.0, "number"),
+        TextBox("Reaction Time (seconds)", "reaction_time"),
 
         Button("Calculate Reaction Rate",
                "calculate_reaction_rate"),
