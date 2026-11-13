@@ -290,11 +290,11 @@ def reaction_rate_calculator(state: State) -> Page:
 
         "Calculate how quickly a reactant is consumed.",
 
-        TextBox("starting_concentration", "Starting Concentration (mol/L)"),
+        TextBox("Starting Concentration (mol/L)", "starting_concentration"),
 
-        TextBox("ending_concentration", "Ending Concentration (mol/L)"),
+TextBox("Ending Concentration (mol/L)", "ending_concentration"),
 
-        TextBox("reaction_time", "Reaction Time (seconds)"),
+TextBox("Reaction Time (seconds)", "reaction_time"),
 
         Button("Calculate Reaction Rate",
                "calculate_reaction_rate"),
