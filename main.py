@@ -276,25 +276,23 @@ def calculate_concentration(state: State, initial: float, rate: float, time_valu
 def reaction_rate_calculator(state: State) -> Page:
     '''
     Displays the reaction rate calculator page
-    
+
     User enters starting concentration, ending concentration, and elapsed time
-    
+
     parameters:
     state(State): stores website information
-    
+
     returns:
     A page containing reaction rate calculator input
     '''
     return Page(state, [
         Header("Reaction Rate Calculator"),
 
-        "Calculate how quickly a reactant is consumed.",
-
         TextBox("Starting Concentration (mol/L)", "starting_concentration"),
 
-TextBox("Ending Concentration (mol/L)", "ending_concentration"),
+        TextBox("Ending Concentration (mol/L)", "ending_concentration"),
 
-TextBox("Reaction Time (seconds)", "reaction_time"),
+        TextBox("Reaction Time (seconds)", "reaction_time"),
 
         Button("Calculate Reaction Rate",
                "calculate_reaction_rate"),
