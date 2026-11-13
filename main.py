@@ -2,7 +2,7 @@ from drafter import *
 from dataclasses import dataclass
 import math
 import matplotlib.pyplot as plt
-from bakery import assert_equal
+
 
 set_website_title("Concentration Explorer")
 set_site_information(
