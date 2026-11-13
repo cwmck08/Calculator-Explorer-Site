@@ -289,10 +289,8 @@ def reaction_rate_calculator(state: State) -> Page:
         Header("Reaction Rate Calculator"),
 
         TextBox("Starting Concentration (mol/L)", "starting_concentration"),
-
-        TextBox("Ending Concentration (mol/L)", "ending_concentration"),
-
-        TextBox("Reaction Time (seconds)", "reaction_time"),
+TextBox("Ending Concentration (mol/L)", "ending_concentration"),
+TextBox("Reaction Time (seconds)", "reaction_time"),
 
         Button("Calculate Reaction Rate",
                "calculate_reaction_rate"),
